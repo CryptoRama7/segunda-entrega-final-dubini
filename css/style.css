@@ -357,6 +357,14 @@ h6 {
     display: none;
 }
 
+.navulitems-close {
+    display: none;
+}
+
+.jam-close-circle {
+    display: none;
+}
+
 .segundaparteindex {
     padding-top: 30px;
     padding-bottom: 30px;
