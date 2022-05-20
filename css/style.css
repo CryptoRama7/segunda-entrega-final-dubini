@@ -353,6 +353,28 @@ h6 {
     color: wheat;
 }
 
+.close__enlace {
+    display: none;
+}
+
+.segundaparteindex {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.imgsegundaparteindex{
+    width: 300px;
+    height: 200px;
+    transition: 3s all;
+}
+
+.segundaparteindex:hover .imgsegundaparteindex {
+    transform: translateX(130px);
+    width: 400px;
+    height: 240px;
+}
+
+
 @media screen and (max-width: 600px) {
     .grid {
         display: flex;
@@ -361,6 +383,25 @@ h6 {
     .nav {
         display: none;
     }
+
+    #lateral {
+        display: block;
+        background-color: saddlebrown   ;
+        height: 100vh;
+        margin: 0;
+        text-align: center;
+        position: fixed;
+        z-index: 999;
+        top: 0;
+        right: -100%;
+        transition: right 0.7s;
+        width: 80%;
+    }
+
+    #lateral:target {
+        right: 0;
+    }
+
     .hamburguesa {
         display: block;
     }
@@ -377,6 +418,7 @@ h6 {
     }
     .redes {
         flex-direction: column;
+        margin-top: 7rem;
     }
     .pie {
         margin: 5px;
@@ -421,6 +463,31 @@ h6 {
     .imgsegundaparteindex {
         animation: none;
     }
+
+    .imgsegundaparteindex{
+        width: 300px;
+        height: 200px;
+    }
+    
+    .segundaparteindex:hover .imgsegundaparteindex {
+        transform: none;
+    }
+
+    .jam-close-circle {
+        display: block;
+        color: wheat;
+        text-decoration: none;
+    }
+
+    .close__enlace {
+        display: block;
+        text-decoration: none;
+    }
+
+    .navulitems-close {
+        display: block;
+        text-decoration: none;
+    }
 }
 
 body { 
@@ -435,23 +502,6 @@ ul {
 button {
     font-size: initial;
 
-}
-
-.segundaparteindex {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
-.imgsegundaparteindex{
-    width: 300px;
-    height: 200px;
-    transition: 3s all;
-}
-
-.segundaparteindex:hover .imgsegundaparteindex {
-    transform: translateX(130px);
-    width: 400px;
-    height: 240px;
 }
 
 .parrafo {
@@ -478,6 +528,12 @@ button {
     z-index: -1;
     margin-left: auto;
     margin-right: auto;
-    max-width: 400px;
-    max-height: 300px;
+    width: 400px;
+    height: 300px;
+}
+
+.footer {
+    background-color: black;
+    height: 3rem;
+    text-align: center;
 }
